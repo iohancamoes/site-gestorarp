@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play, ChevronDown } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
 
 const HeroSection = () => {
@@ -11,11 +11,6 @@ const HeroSection = () => {
   useEffect(() => {
     setIsLoaded(true);
   }, []);
-
-  const scrollToContent = () => {
-    const element = document.getElementById('problema');
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -68,26 +63,21 @@ const HeroSection = () => {
 
           {/* Headline */}
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight mb-6 text-balance animate-fade-up delay-100">
-            Acabe com o Desperdício
+            Melhore a Eficiência, Transparência
             <br />
-            <span className="gradient-text">na Gestão de ATAs</span>
+            <span className="gradient-text">a Gestão e o Controle do seu Órgão</span>
           </h1>
 
           {/* Sub-headline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 text-balance animate-fade-up delay-200">
-            O GestorARP é o sistema inteligente que otimiza o controle de Atas de Registro de Preços, 
-            economiza recursos e garante a conformidade na sua organização pública.
+            O Gestor de ARP ajuda sua instituição a evitar desperdícios, manter conformidade e garantir o uso responsável dos recursos públicos.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-up delay-300">
             <Button variant="hero" size="xl" className="group">
-              Agendar Demonstração Gratuita
+              Teste Gratuitamente agora
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button variant="glass" size="xl" className="group">
-              <Play className="w-5 h-5" />
-              Ver Como Funciona
             </Button>
           </div>
 
@@ -103,15 +93,6 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-
-        {/* Scroll Indicator */}
-        <button
-          onClick={scrollToContent}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors animate-fade-up delay-700"
-        >
-          <span className="text-sm">Scroll para descobrir</span>
-          <ChevronDown className="w-5 h-5 animate-bounce" />
-        </button>
       </div>
 
       {/* Decorative Elements */}
