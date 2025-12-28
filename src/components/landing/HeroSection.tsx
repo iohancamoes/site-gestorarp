@@ -63,27 +63,27 @@ const HeroSection = () => {
 
           {/* Headline */}
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight mb-6 text-balance animate-fade-up delay-100">
-            Melhore a Eficiência, Transparência
+            Gestão eficiente, transparente
             <br />
-            <span className="gradient-text">a Gestão e o Controle do seu Órgão</span>
+            <span className="gradient-text">e sob controle</span>
           </h1>
 
           {/* Sub-headline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 text-balance animate-fade-up delay-200">
-            O Gestor de ARP ajuda sua instituição a evitar desperdícios, manter conformidade e garantir o uso responsável dos recursos públicos.
+            O Gestor de ARP centraliza a gestão das Atas de Registro de Preços, permitindo acompanhar saldos, consumo e vigências com precisão, rastreabilidade e conformidade normativa.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-up delay-300">
             <Button variant="hero" size="xl" className="group">
-              Teste Gratuitamente agora
+              Acessar gratuitamente
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
 
           {/* Trust Indicators */}
           <div className="animate-fade-up delay-500">
-            <p className="text-sm text-muted-foreground mb-4">Utilizado por organizações públicas em todo o Brasil</p>
+            <p className="text-sm text-muted-foreground mb-4">Adotado por órgãos públicos em todo o Brasil</p>
             <div className="flex items-center justify-center gap-8 opacity-60">
               <div className="text-foreground font-display font-semibold text-lg">Prefeituras</div>
               <div className="w-px h-6 bg-border" />
