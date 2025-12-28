@@ -82,7 +82,7 @@ const HeroSection = () => {
             <Button 
               variant="secondary" 
               size="xl" 
-              className="group hover:bg-primary/10 hover:text-primary hover:scale-[1.02] hover:shadow-md hover:shadow-primary/20 transition-all duration-300" 
+              className="group hover:bg-primary/10 hover:text-primary-foreground hover:scale-[1.02] hover:shadow-md hover:shadow-primary/20 transition-all duration-300" 
               asChild
             >
               <a href="#como-funciona">
