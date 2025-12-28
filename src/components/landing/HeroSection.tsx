@@ -70,7 +70,7 @@ const HeroSection = () => {
 
           {/* Sub-headline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 text-balance animate-fade-up delay-200">
-            O Gestor de ARP centraliza a gestão das Atas de Registro de Preços, permitindo acompanhar saldos, consumo e vigências com precisão, rastreabilidade e conformidade normativa.
+            O Gestor de ARP centraliza a gestão das Atas de Registro de Preços, permitindo acompanhar saldos, consumo e vigências com precisão, rastreabilidade e conformidade.
           </p>
 
           {/* CTA Buttons */}
@@ -78,6 +78,11 @@ const HeroSection = () => {
             <Button variant="hero" size="xl" className="group">
               Acessar gratuitamente
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+            <Button variant="secondary" size="xl" className="group" asChild>
+              <a href="#como-funciona">
+                Ver como funciona
+              </a>
             </Button>
           </div>
 
