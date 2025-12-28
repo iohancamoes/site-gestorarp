@@ -79,7 +79,12 @@ const HeroSection = () => {
               Acessar gratuitamente
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button variant="secondary" size="xl" className="group" asChild>
+            <Button 
+              variant="secondary" 
+              size="xl" 
+              className="group hover:bg-primary/10 hover:text-primary hover:scale-[1.02] hover:shadow-md hover:shadow-primary/20 transition-all duration-300" 
+              asChild
+            >
               <a href="#como-funciona">
                 Ver como funciona
               </a>
