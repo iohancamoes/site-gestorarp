@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0, 0.55, 0.45, 1] as any } }, // Corrigido o tipo de 'ease' com asserção
 };
 
 const Index = () => {
